@@ -39,14 +39,7 @@ const About = () => {
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                    'FullStack Web Developer, Attended Le Wagon LONDON (Batch #474). , however as a Junior I am mainly focused on Front-End for the time being. My role is to write and style the front-end components that meet the requirements of mocks and fulfill user stories. I also monitor and process pull requests for production deployments. Technologies used: Ruby on Rails, ReactJS, JavaScript, ES6,  SQL, SASS'}
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">
