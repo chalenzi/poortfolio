@@ -7,7 +7,7 @@ import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const { img, paragraphOne, paragraphTwo, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -38,8 +38,13 @@ const About = () => {
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
-                  {paragraphOne ||
-                    'FullStack Web Developer, Attended Le Wagon LONDON (Batch #474). , however as a Junior I am mainly focused on Front-End for the time being. My role is to write and style the front-end components that meet the requirements of mocks and fulfill user stories. I also monitor and process pull requests for production deployments. Technologies used: Ruby on Rails, ReactJS, JavaScript, ES6,  SQL, SASS'}
+                  {paragraphOne || 'FullStack Web Developer'}
+                </p>
+                <p className="about-wrapper__info-text">
+                  {paragraphTwo || ' Attended Le Wagon LONDON  (Batch #474).'}
+                </p>
+                <p className="about-wrapper__info-text">
+                  {paragraphTwo || 'Technologies used: Ruby on Rails, ReactJS, SQL, SASS'}
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">
